@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(158, 38, 38);
+}
+
+#videoHeader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0;
+    color: white;
+    opacity: 0.8;
+    z-index: 2;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+video {
+    width: 100vw;
+    height: 56.25vw;
+    max-height: 100vh;
+    object-fit: cover;
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+
+#videoText {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    opacity: 1;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+
+.footer {
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+video, img {
+    width: 100%; /* Nastaví šířku videa a obrázku na 100% */
+    height: auto; /* Udržuje původní poměr stran videa a obrázku */
+}
+
+
+
+.textOnImage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em; 
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+    opacity: 0.8;
+    z-index: 2;
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+    width: 80%;
+}
+
+.imageContainer {
+    position: relative;
+    overflow: hidden;
+}
+
+
